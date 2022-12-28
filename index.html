@@ -1,38 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Speed Racer</title>
-    <!-- Lib -->
-    <script src="./lib/p5.min.js"></script>
-    <script src="./lib/p5.dom.min.js"></script>
-    <script src="./lib/p5.sound.min.js"></script>
-    <script src="./lib/p5.play.js"></script>
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.play.js"></script>
 
-    <link rel="stylesheet" href="style.css" />
+  <script src="js/form.js"></script>
+<!--Link game.js and player.js-->
+<script src="js/game.js"></script>
+<script src="js/player.js"></script>
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
 
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyChQjXq8MyLUIChfTpJ3JHBhFssa1uS62o",
-        authDomain: "cargame2nov.firebaseapp.com",
-        databaseURL: "https://cargame2nov-default-rtdb.firebaseio.com",
-        projectId: "cargame2nov",
-        storageBucket: "cargame2nov.appspot.com",
-        messagingSenderId: "573826449625",
-        appId: "1:573826449625:web:88bebd67c8145508693ec8"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-  </head>
-  <body>
-    <script src="./js/Game.js"></script>
-    <script src="./js/Form.js"></script>
-    <script src="./js/Player.js"></script>
-    <script src="./sketch.js"></script>
-  </body>
-</html>
+<script>
+<!--Add database config here below-->
+  const firebaseConfig = {
+    apiKey: "AIzaSyDpxZruGI7NYydD1sMc6zm-TPKEn_43ZjQ",
+    authDomain: "car-game081222.firebaseapp.com",
+    databaseURL: "https://car-game081222-default-rtdb.firebaseio.com",
+    projectId: "car-game081222",
+    storageBucket: "car-game081222.appspot.com",
+    messagingSenderId: "453188620186",
+    appId: "1:453188620186:web:1af84093195a31cf9ef423"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script src="sketch.js"></script>
+
+
+
+</body></html>
